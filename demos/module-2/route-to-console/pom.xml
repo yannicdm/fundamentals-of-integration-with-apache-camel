@@ -69,11 +69,18 @@
             <plugin>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-maven-plugin</artifactId>
-                <version>${camel.version}</version>
+                <version>4.3.0</version>
                 <configuration>
                     <mainClass>com.pluralsight.michaelhoffman.camel.routetoconsole.RouteToConsoleApplication</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                  <mainClass>com.pluralsight.michaelhoffman.camel.routetoconsole.RouteToConsoleApplication</mainClass>
+                </configuration>
+              </plugin>
         </plugins>
     </build>
 </project>
